@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GSB-RV</string>
+    <string name="mat">Matricule :</string>
+    <string name="mdp">Mot de passe :</string>
+    <string name="val">VALIDER</string>
+    <string name="ann">ANNULER</string>
+    <string name="ech">Echec à la connexion.Recommencez…</string>
+</resources>
