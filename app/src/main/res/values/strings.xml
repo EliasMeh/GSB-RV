@@ -1,8 +1,14 @@
 <resources>
     <string name="app_name">GSB-RV</string>
+    <string name="menu_rv">Menu RV</string>
     <string name="mat">Matricule :</string>
     <string name="mdp">Mot de passe :</string>
     <string name="val">VALIDER</string>
     <string name="ann">ANNULER</string>
     <string name="ech">Echec à la connexion.Recommencez…</string>
+    <string name="insmat">Insérez matricule</string>
+    <string name="insmdp">Insérez matricule</string>
+    <string name="menu_cons">Consulter</string>
+    <string name="menu_sais">Saisir</string>
+
 </resources>

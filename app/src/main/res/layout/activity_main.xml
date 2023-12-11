@@ -12,10 +12,11 @@
         android:text="@string/mat" />
 
     <EditText
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text=""
         android:id="@+id/editTextMatricule"
+        android:hint="@string/insmat"
         />
     <TextView
         android:id="@+id/textView2"
@@ -23,10 +24,11 @@
         android:layout_height="wrap_content"
         android:text="@string/mdp" />
     <EditText
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text=""
         android:id="@+id/editTextMdp"
+        android:hint="@string/insmdp"
         />
     <LinearLayout
         android:layout_width="match_parent"

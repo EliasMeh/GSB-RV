@@ -10,7 +10,7 @@ public class ModeleGsb {
 
     private List<Visiteur> lesVisiteurs = new ArrayList<Visiteur>() ;
 
-    public ModeleGsb(){
+    private ModeleGsb(){
         super() ;
         this.peupler() ;
     }

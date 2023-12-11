@@ -1,5 +1,6 @@
 package fr.gsb;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.view.View.OnClickListener ;
 
 import fr.gsb.rv.entites.Visiteur;
 import fr.gsb.rv.modeles.ModeleGsb;
+import fr.gsb.rv.technique.Session;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -45,14 +47,26 @@ public class MainActivity extends AppCompatActivity {
                 String matricule = matriculeText.getText().toString();
                 String mdp = mdpText.getText().toString();
 
-                ModeleGsb modeleGsb = new ModeleGsb();
-                if(modeleGsb.seConnecter(matricule, mdp) != null){
-                    Visiteur bruh = modeleGsb.seConnecter(matricule, mdp);
+                ModeleGsb modeleGsb = ModeleGsb.getInstance();
+
+                Visiteur bruh = modeleGsb.seConnecter(matricule,mdp);
+
+                if(bruh != null){
                     Log.i("GSB_MAIN_ACTIVITY", "Connexion Ok " + bruh.getNom() + " " + bruh.getPrenom()) ;
-                    boutonAnnuler.setEnabled(false);
-                    boutonValider.setEnabled(false);
+                    //boutonAnnuler.setEnabled(false);
+                    //boutonValider.setEnabled(false);
+                    Intent intent = new Intent(MainActivity.this, MenuRvActivity.class);
+                    Bundle informations = new Bundle();
+                    //informations.putString("nom", bruh.getNom());
+                    //informations.putString("prenom", bruh.getPrenom());
+                    Session.ouvrir(bruh);
+
+                    //intent.putExtras(informations);
+                    intent.putExtra("Session_ouverte", session);
+                    startActivity(intent) ;
                 }
                 else{
+                    
                     Log.i("GSB_MAIN_ACTIVITY", "Connexion Nok");
                 }
 

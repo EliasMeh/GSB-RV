@@ -19,5 +19,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:exported="true"
+            android:name=".MenuRvActivity">
+
+        </activity>
+        <activity android:exported="true"
+            android:name=".RechercheRvActivity">
+
+        </activity>
+        <activity android:exported="true"
+            android:name=".SaisieRvActivity">
+
+        </activity>
     </application>
 </manifest>
