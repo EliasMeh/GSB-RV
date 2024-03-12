@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">GSB-RV</string>
+    <string name="menu_rv">Menu RV</string>
+    <string name="mat">Matricule :</string>
+    <string name="mdp">Mot de passe :</string>
+    <string name="val">VALIDER</string>
+    <string name="ann">ANNULER</string>
+    <string name="ech">Echec à la connexion.Recommencez…</string>
+    <string name="insmat">Insérez matricule</string>
+    <string name="insmdp">Insérez matricule</string>
+    <string name="menu_cons">Consulter</string>
+    <string name="menu_sais">Saisir</string>
+    <string name="menu">MENU</string>
+    <string name="cher">CHERCHER</string>
+    <string name="rv">Données du Rapport de Visite :</string>
+    <string name="recher">INFORMATIONS COMPLEMENTAIRE</string>
+    <string name="echant">Données sur les échantillons de la visite :</string>
+    <string name="saisie">Saisie d\'un rapport de visite :</string>
+    <string name="pra"> Praticien :</string>
+    <string name="mot"> Motif :</string>
+    <string name="bil"> Bilan :</string>
+    <string name="cr"> Créer </string>
+    <string name="ajouter"> Ajouter </string>
+</resources>
